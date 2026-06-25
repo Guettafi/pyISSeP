@@ -184,3 +184,62 @@
 
 
 #endregion
+
+#region table de 2 
+
+# i = 1
+# while i <=10:
+#     print(f"{i} x 2 = {i*2}")
+#     i+=1
+
+
+#endregion
+
+#region modif lanceur de balle
+
+# basket = int(input("Combien de balle dans le panier ? "))
+
+# while basket>0:
+#     ready = bool(int(input("Etes vous prêt ? 1 → oui , 0 → non")))
+#     if ready:
+#         print("Balle lancée")
+#         basket -=1
+#     else:
+#         print("Vous n'etes pas prêt")
+#         stop = bool(int(input('Voulez vous arreter maintenant ? 1 = oui 0 = non')))
+#         if stop:
+#             basket=0
+
+# print("Panier vide")
+
+
+#endregion
+
+#region multipception
+
+# i = 1
+# while i <= 10:
+#     j = 1 
+#     while j <= 10:
+#         print(f"{i} x {j} = {i*j}")
+#         j +=1
+#     i+=1
+
+
+#endregion
+
+#region au plus pret
+
+import random
+nbRandom = random.randrange(10)
+nbUser = int(input("Entrez un nombre"))
+while nbUser != nbRandom:
+    if nbUser< nbRandom:
+        print("c'est plus")
+        nbUser = int(input("Entrez un nombre"))
+    else:
+        print("c'est moin")
+        nbUser = int(input("Entrez un nombre"))
+print(f"Bravo le nombre etais {nbRandom}")
+
+#endregion

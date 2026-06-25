@@ -113,5 +113,74 @@
 
 #region calculatrice
 
+# nb1 = int(input("Entrez un premier nombre "))
+# op = input("Entrez un operateur ")
+# nb2 = int(input("Entrez un deuxieme nombre "))
+
+# if op =="+":
+#     print(nb1+nb2)
+# elif op=="-":
+#     print(nb1-nb2)
+# elif op=='/':
+#     if nb2 ==0:
+#         print("on ne peut pas diviser par 0")
+#     else:
+#         print(nb1/nb2)
+# elif op=="*":
+#     print(nb1*nb2)
+
+#endregion
+
+#region note 
+
+# noteUser = int(input("Veuillez entrer votre note"))
+
+# if noteUser>=18 and noteUser<=20:
+#     print("Felicitation")   
+# elif noteUser>=10 and noteUser<18:
+#     print("t'as reussis")  
+# elif noteUser<10 and noteUser>=0:
+#     print("je ne te félicite pas")
+# else:
+#     print('la note est en dehors des clous')   
+
+# match noteUser:
+#     case n if n>=18 and n<=20:
+#         print("Felicitation")
+#     case n if n>=10 and n<18:
+#         print("t'as reussis")    
+#     case n if n<10 and n>=0:
+#         print("je ne te félicite pas")
+#     case _:
+#         print('la note est en dehors des clous')    
+
+
+
+#endregion
+
+#region convertisseur de seconde ameliorer
+
+# dayUser=int(input('veuillez entrer le nombre de jour'))
+# hourUser=int(input("veuillez entrer le nombre de d'heure"))
+# minUser=int(input('veuillez entrer le nombre de minutes'))
+# secUser=int(input('veuillez entrer le nombre de seconde'))
+# totalMS = dayUser*86400 + hourUser*3600 + minUser*60+secUser
+
+# dayUser=int(input('veuillez entrer le nombre de jour'))
+# hourUser=int(input("veuillez entrer le nombre de d'heure"))
+# minUser=int(input('veuillez entrer le nombre de minutes'))
+# secUser=int(input('veuillez entrer le nombre de seconde'))
+# totalMS2 = dayUser*86400 + hourUser*3600 + minUser*60+secUser
+
+# totalMS = totalMS-totalMS2 if totalMS>totalMS2 else totalMS2-totalMS
+# dayUser = totalMS//86400
+# totalMS2 = totalMS%86400
+# hourUser = totalMS2//3600
+# totalMS2 = totalMS%3600
+# minUser = totalMS2//60
+# secUser = totalMS2%60
+
+# print(f"la difference est de {dayUser} jours, {hourUser} heures, {minUser} minutes, {secUser} secondes")
+
 
 #endregion

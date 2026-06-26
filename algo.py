@@ -230,16 +230,81 @@
 
 #region au plus pret
 
-import random
-nbRandom = random.randrange(10)
-nbUser = int(input("Entrez un nombre"))
-while nbUser != nbRandom:
-    if nbUser< nbRandom:
-        print("c'est plus")
-        nbUser = int(input("Entrez un nombre"))
-    else:
-        print("c'est moin")
-        nbUser = int(input("Entrez un nombre"))
-print(f"Bravo le nombre etais {nbRandom}")
+# import random
+# nbRandom = random.randrange(10)
+# nbUser = int(input("Entrez un nombre"))
+# while nbUser != nbRandom:
+#     if nbUser< nbRandom:
+#         print("c'est plus")
+#         nbUser = int(input("Entrez un nombre"))
+#     else:
+#         print("c'est moin")
+#         nbUser = int(input("Entrez un nombre"))
+# print(f"Bravo le nombre etais {nbRandom}")
+
+#endregion
+
+#region tableau
+# tab = []
+# i = 0 
+# j = 0
+# while i<6:
+#     tab.append(int(input(f"Veuiller entre le nombre n° {i+1}")))
+#     i+= 1
+
+# while j<len(tab):
+#     print(tab[j])
+#     j+=1
+#endregion
+
+#region tableau²
+# i = 1
+# j= 0
+# tab = []
+# while j<30:
+#     i =i*2
+#     tab.append(i)
+#     j +=1
+# j = 0
+# while j<30:
+#     print(tab[j])
+#     j +=1
+#endregion
+
+#region cote joueur
+"""
+joueurs = int(input("Combien de joueurs ?(Max 10)"))
+moyenne = 0
+for j in range(0,joueurs,1):
+    cote = int(input(f"Score n° {j}: "))
+    moyenne +=cote
+print(f"la moyenne des cotes de vos joueurs est : {moyenne/j}")
+"""
+#endregion
+
+#region inversion tableau
+
+# tab = [10,42,83]
+# newTab = []
+
+# for i in range(len(tab), 0,-1):
+#     newTab.append(tab[i-1])
+# for i in range(0, len(newTab), 1):
+#     print(newTab[i])
+
+#endregion
+
+#region tri tableau
+
+# tab = [42,18,27,74,56,1,96,24]
+
+# for i in range(len(tab)) :
+#     minimum= i
+#     for j in range(i+1,len(tab)):
+#         if tab[j]<tab[minimum]:
+#             minimum = j
+#     tab[i],tab[minimum] = tab[minimum], tab[i]
+# for i in range(0,len(tab),1):
+#     print(tab[i])
 
 #endregion
